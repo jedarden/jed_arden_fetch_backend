@@ -1,0 +1,25 @@
+{% block content %}
+    <h1>{% block title %} Add a New Transaction {% endblock %}</h1>
+    <form action="/transaction/create" method="post">
+        <label for="payer">Payer (string)</label>
+        <br>
+        <input type="text" name="payer"
+               placeholder="DANNON"
+               value=""></input>
+        <br>
+        <label for="points">Points (integer)</label>
+        <br>
+        <input type="number" name="points"
+               placeholder="100"
+               value=""></input>
+        <br>
+        <label for="timestamp">Timestamp (string)</label>
+        <br>
+        <input type="text" name="timestamp"
+               placeholder="2020-11-10T14:00:00Z"
+               value=""></input>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

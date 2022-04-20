@@ -1,0 +1,11 @@
+{% block content %}
+    <h1>{% block title %} Add a New Transaction {% endblock %}</h1>
+    <form action="/transaction/spend" method="post">
+        <label for="points">Points (integer)</label>
+        <br>
+        <input type="number" name="points"
+               placeholder="100"
+               value=""></input>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
